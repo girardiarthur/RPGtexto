@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class rpg {
 
-    // ============================================================
-    // MÉTODOS GERAIS
-    // ============================================================
 
     // Lê uma opção numérica e impede que o programa quebre
     // caso o jogador digite algo que não seja um número.
@@ -78,9 +75,8 @@ public static boolean verificarCritico(int[] personagem) {
         return false;
     }
 }
-    // ============================================================
-    // ESCOLHA DE CLASSE
-    // ============================================================
+
+    //escolha de classes
 
     public static void mostrarClasses() {
 
@@ -202,10 +198,7 @@ public static boolean verificarCritico(int[] personagem) {
         return opcao == 1;
     }
 
-
-    // ============================================================
-    // INTRODUÇÃO DAS CLASSES
-    // ============================================================
+// inicio da historía
 
     public static void introducaoClasse(int classe, Scanner entrada) {
 
@@ -284,9 +277,7 @@ public static boolean verificarCritico(int[] personagem) {
     }
 
 
-    // ============================================================
-    // CHEGADA AO CASTELO
-    // ============================================================
+    
 
     public static void cenaCastelo(Scanner entrada) {
 
@@ -348,9 +339,6 @@ System.out.println(torre);
     }
 
 
-    // ============================================================
-    // PRIMEIRO ENCONTRO COM NOSFERATU
-    // ============================================================
 
     public static void encontroNosferatu(Scanner entrada) {
 
@@ -418,10 +406,7 @@ System.out.println(nosferatu);
     }
 
 
-    // ============================================================
-    // PRIMEIRA BATALHA CONTRA NOSFERATU
-    // O JOGADOR PERDE O COMBATE DE PROPÓSITO.
-    // ============================================================
+
 
     public static void batalhaInicial(
             Scanner entrada,
@@ -576,9 +561,6 @@ System.out.println(nosferatu);
     }
 
 
-    // ============================================================
-    // MORTE DO PERSONAGEM
-    // ============================================================
 
     public static void cenaMorte(Scanner entrada) {
 
@@ -622,9 +604,6 @@ System.out.println(nosferatu);
     }
 
 
-    // ============================================================
-    // DESPERTAR NO SUBMUNDO
-    // ============================================================
 
     public static void despertarSubmundo(
             Scanner entrada,
@@ -678,9 +657,6 @@ System.out.println(nosferatu);
     }
 
 
-    // ============================================================
-    // ENCONTRO COM O DIABINHO
-    // ============================================================
 
     public static void encontroDiabinho(Scanner entrada) {
 
@@ -737,9 +713,7 @@ System.out.println(arte);
     }
 
 
-    // ============================================================
-    // BATALHA CONTRA O DIABINHO
-    // ============================================================
+
 
     public static void batalhaDiabinho(
             Scanner entrada,
@@ -954,10 +928,6 @@ System.out.println(arte);
     }
 
 
-    // ============================================================
-    // EVOLUÇÃO APÓS DERROTAR O DIABINHO
-    // ============================================================
-
     public static void evoluirPersonagem(int[] personagem) {
 
         System.out.println("              EVOLUCAO");
@@ -1001,9 +971,7 @@ System.out.println(arte);
     }
 
 
-    // ============================================================
-    // CAMINHO ATÉ O DIABO
-    // ============================================================
+
 
     public static void caminhoAteDiabo(Scanner entrada) {
 
@@ -1062,9 +1030,7 @@ System.out.println(arte);
     }
 
 
-    // ============================================================
-    // ENCONTRO COM O DIABO
-    // ============================================================
+
 
     public static void encontroDiabo(Scanner entrada) {
 
@@ -1136,10 +1102,6 @@ System.out.println(demonio);
         pausar(entrada);
     }
 
-
-    // ============================================================
-    // BATALHA CONTRA O DIABO
-    // ============================================================
 
     public static void batalhaDiabo(
             Scanner entrada,
@@ -1378,10 +1340,6 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // ENCONTRO COM O GUARDIÃO DO PORTÃO
-    // ============================================================
-
     public static void encontroDemonio(Scanner entrada) {
 
   
@@ -1474,9 +1432,6 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // BATALHA CONTRA O GUARDIÃO
-    // ============================================================
 
     public static void batalhaDemonio(
             Scanner entrada,
@@ -1679,9 +1634,7 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // RENASCIMENTO
-    // ============================================================
+
 
     public static void cenaRenascimento(
             Scanner entrada,
@@ -1783,9 +1736,6 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // RETORNO AO CASTELO
-    // ============================================================
 
     public static void cenaRetornoCastelo(Scanner entrada) {
 
@@ -1834,9 +1784,7 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // SEGUNDO ENCONTRO COM NOSFERATU
-    // ============================================================
+  
 
     public static void encontroFinalNosferatu(Scanner entrada) {
 
@@ -1915,9 +1863,7 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // BATALHA FINAL CONTRA NOSFERATU
-    // ============================================================
+
 
     public static void batalhaFinalNosferatu(
             Scanner entrada,
@@ -2123,9 +2069,7 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // FINAL DA HISTÓRIA
-    // ============================================================
+
 
     public static void finalHistoria(Scanner entrada) {
 
@@ -2167,9 +2111,7 @@ System.out.println(demonio);
     }
 
 
-    // ============================================================
-    // MÉTODO PRINCIPAL
-    // ============================================================
+   
 
     public static void main(String[] args) {
 
@@ -2211,9 +2153,7 @@ System.out.println(demonio);
         } while (!confirmar);
 
 
-        // --------------------------------------------------------
-        // PRIMEIRA PARTE: CASTELO E DERROTA
-        // --------------------------------------------------------
+     
 
         introducaoClasse(classe, entrada);
 
@@ -2224,11 +2164,6 @@ System.out.println(demonio);
         batalhaInicial(entrada, personagem, classe);
 
         cenaMorte(entrada);
-
-
-        // --------------------------------------------------------
-        // SEGUNDA PARTE: SUBMUNDO E DIABINHO
-        // --------------------------------------------------------
 
         despertarSubmundo(entrada, personagem, classe);
 
@@ -2245,17 +2180,12 @@ System.out.println(demonio);
 
             encontroDiabo(entrada);
 
-            // ------------------------------------------     System.out.println("========================================");----------
-            // TERCEIRA PARTE: DIABO
-            // ----------------------------------------------------
 
             batalhaDiabo(entrada, personagem, classe);
 
             if (personagem[0] > 0) {
 
-                // ------------------------------------------------
-                // QUARTA PARTE: GUARDIÃO
-                // ------------------------------------------------
+             
 
                 encontroDemonio(entrada);
 
@@ -2263,9 +2193,6 @@ System.out.println(demonio);
 
                 if (personagem[0] > 0) {
 
-                    // --------------------------------------------
-                    // QUINTA PARTE: RENASCIMENTO
-                    // --------------------------------------------
 
                     cenaRenascimento(
                         entrada,
@@ -2277,9 +2204,6 @@ System.out.println(demonio);
 
                     encontroFinalNosferatu(entrada);
 
-                    // --------------------------------------------
-                    // SEXTA PARTE: BATALHA FINAL
-                    // --------------------------------------------
 
                     batalhaFinalNosferatu(
                         entrada,
